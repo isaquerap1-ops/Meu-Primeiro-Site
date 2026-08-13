@@ -3,23 +3,11 @@ console.log("Arquivo JavaScript conectado com sucesso!");
 // ==========================================
 // FUNCIONALIDADE 1: MODO ESCURO (DARK MODE)
 // ==========================================
-// Seleciona o botão de tema que criamos no HTML pelo ID dele
 const botaoTema = document.getElementById("botao-tema");
-// Adiciona um evento de clique ao botão
+
 botaoTema.addEventListener("click", function() {
- // Seleciona o corpo (body) da página
- const corpoPagina = document.body;
- // Se o fundo atual for claro, muda para escuro. Se for escuro, volta para o claro.
- if (corpoPagina.style.backgroundColor === "rgb(26, 37, 47)" ||
-corpoPagina.style.backgroundColor === "#1a252f") {
- // Restaura o padrão do CSS original (Modo Claro)
- corpoPagina.style.backgroundColor = "#f4f7f6";
- corpoPagina.style.color = "#333333";
- } else {
- // Altera para cores escuras (Modo Escuro)
- corpoPagina.style.backgroundColor = "#1a252f";
- corpoPagina.style.color = "#ffffff";
- }
+  // O 'toggle' adiciona a classe se ela não existir, e remove se ela já existir
+  document.body.classList.toggle("dark-mode");
 });
 // ==========================================
 // FUNCIONALIDADE 2: EFEITO NAS TECNOLOGIAS
