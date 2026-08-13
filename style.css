@@ -2,10 +2,19 @@
 body {
 font-family: Arial, sans-serif;
 background-color: #f4f7f6;
-color: inherit;
+color: #333333;
 max-width: 800px;
 margin: 0 auto;
 padding: 20px;
+}
+body.dark-mode {
+  background-color: #1a252f;
+  color: #ffffff;
+  }
+
+/* 3. Garante que todos os textos da página sigam a cor do body (seja claro ou escuro) */
+p, li, h1, h2, h3, span {
+  color: inherit;
 }
 /* Estilização do cabeçalho */
 header {
