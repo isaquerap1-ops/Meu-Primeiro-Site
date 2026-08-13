@@ -1,34 +1,26 @@
-/* Configuração geral do corpo do site */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f7f6;
-  color: #333333;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  transition: background-color 0.3s, color 0.3s; /* Deixa a mudança de tema suave! */
-}
-
-/* Garante que os textos sigam a cor do body */
-p, li, h1, span {
-  color: inherit;
-}
-
-/* Estilização do cabeçalho */
+/* Estilização do cabeçalho corrigida */
 header {
   background-color: #1a252f;
   color: #ffffff;
-  padding: 20px;
+  padding: 20px 20px 60px 20px; /* Aumentamos o espaçamento de baixo para dar espaço ao botão */
   text-align: center;
   border-radius: 8px;
+  position: relative; /* Serve como ponto de referência para o botão se posicionar */
 }
 
 header h1 {
-  margin: 0 0 10px 0;
-  color: #ffffff; /* Garante o título do topo sempre visível */
+  margin: 0 0 15px 0;
+  color: #ffffff;
 }
 
-/* Links de navegação */
+/* Links de navegação centralizados */
+nav {
+  display: flex;
+  justify-content: center; /* Garante que os links fiquem no centro absoluto */
+  gap: 20px; /* Cria um espaçamento elegante entre os dois links */
+  margin-bottom: 10px;
+}
+
 nav a {
   color: #3498db;
   text-decoration: none;
@@ -38,6 +30,26 @@ nav a {
 nav a:hover {
   text-decoration: underline;
 }
+
+/* Posicionamento do Botão de Alternar Tema */
+#botao-tema {
+  position: absolute;
+  left: 20px;   /* Cola no canto esquerdo da seção */
+  bottom: 20px; /* Cola no canto inferior da seção */
+  padding: 8px 12px;
+  background-color: #34495e;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+#botao-tema:hover {
+  background-color: #2c3e50;
+}
+
 
 /* Seções de conteúdo (Modo Claro Padrão) */
 section {
