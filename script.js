@@ -14,8 +14,7 @@ botaoTema.addEventListener("click", function() {
 // ==========================================
 // Seleciona TODOS os elementos da lista que possuem a classe "tech-item"
 const itensTecnologia = document.querySelectorAll(".tech-item");
-// Como são vários itens, usamos o 'forEach' (para cada) para aplicar o efeito em um
-por um
+// Como são vários itens, usamos o 'forEach' (para cada) para aplicar o efeito em um por um
 itensTecnologia.forEach(function(item) {
 
  // Evento: Quando o ponteiro do mouse entra no item
