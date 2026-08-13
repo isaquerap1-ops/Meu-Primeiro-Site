@@ -66,20 +66,26 @@ footer {
    CONFIGURAÇÕES EXCLUSIVAS DO MODO ESCURO 
    ========================================== */
 body.dark-mode {
-  background-color: #0f171e !important; /* Um fundo um pouco mais escuro para o fundo geral */
+  background-color: #0f171e !important; 
   color: #ffffff !important;
 }
 
 /* Muda o fundo dos blocos brancos para escuro */
 body.dark-mode section {
-  background-color: #1a252f; 
-  box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+  background-color: #1a252f !important; /* Adicionado !important */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.4) !important;
 }
 
 /* Muda a cor dos títulos H2 dentro dos blocos escuros */
 body.dark-mode h2 {
-  color: #ffffff;
+  color: #ffffff !important; /* Adicionado !important */
 }
+
+/* Ajusta o texto do rodapé para ficar legível no escuro */
+body.dark-mode footer {
+  color: #bdc3c7 !important;
+}
+
 
 /* Ajusta o texto do rodapé para ficar legível no escuro */
 body.dark-mode footer {
