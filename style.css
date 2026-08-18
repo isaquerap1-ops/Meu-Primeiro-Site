@@ -127,3 +127,27 @@ body.dark-mode footer {
 .linkedin-link:hover {
     text-decoration: underline;
 }
+
+/* ESTILIZAÇÃO DOS BOX QUE ABRE AS OPÇÕES DE ESTUDO */
+
+.tech-item {
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.tech-item:hover {
+    color: #3498db;
+}
+
+.tech-box {
+    background-color: #f4f7f6;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+}
+
+.tech-box h3 {
+    color: #2c3e50;
+    margin-top: 0;
+}
