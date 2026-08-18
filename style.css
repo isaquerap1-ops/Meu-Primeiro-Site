@@ -117,3 +117,13 @@ body.dark-mode h2 {
 body.dark-mode footer {
   color: #bdc3c7 !important;
 }
+
+.linkedin-link {
+    color: #0A66C2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.linkedin-link:hover {
+    text-decoration: underline;
+}
