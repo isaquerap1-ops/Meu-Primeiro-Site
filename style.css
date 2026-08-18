@@ -151,3 +151,19 @@ body.dark-mode footer {
     color: #2c3e50;
     margin-top: 0;
 }
+
+/* MUDAR A COR DO TEXTO QUANDO MUDA DE TEMA */
+
+/* Ajuste do box das tecnologias no modo escuro */
+body.dark-mode .tech-box {
+    background-color: #1a252f;
+    color: #ffffff;
+}
+
+body.dark-mode .tech-box h3 {
+    color: #3498db;
+}
+
+body.dark-mode .tech-box p {
+    color: #ffffff;
+}
