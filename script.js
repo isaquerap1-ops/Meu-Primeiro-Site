@@ -52,3 +52,84 @@ tituloNome.addEventListener("click", function() {
     cliques = 0; // Reinicia o contador
   }
 });
+
+// EVENTO QUE MOSTRA OS BOX DAS OPÇÕES DE TECNOLOGIAS QUE ESTOU ESTUDANDO
+
+const tecnologias = document.querySelectorAll(".tech-item");
+const info = document.getElementById("tech-info");
+
+tecnologias.forEach(function(tecnologia) {
+
+    tecnologia.addEventListener("click", function() {
+
+        const tipo = tecnologia.dataset.tech;
+
+        if (info.dataset.aberto === tipo) {
+            info.innerHTML = "";
+            info.dataset.aberto = "";
+            return;
+        }
+
+        if (tipo === "html") {
+            info.innerHTML = `
+                <div class="tech-box">
+                    <h3>HTML</h3>
+                    <p>
+                        HTML é a linguagem usada para estruturar uma página
+                        da internet. Ele define elementos como títulos,
+                        textos, imagens, links, botões e seções.
+                    </p>
+                    <p>
+                        Em resumo, HTML cria a estrutura da página,
+                        CSS cuida da aparência e JavaScript adiciona
+                        interatividade.
+                    </p>
+                </div>
+            `;
+        }
+
+        if (tipo === "css") {
+            info.innerHTML = `
+                <div class="tech-box">
+                    <h3>CSS</h3>
+                    <p>
+                        CSS é a linguagem responsável pela aparência
+                        de uma página. Ele permite definir cores,
+                        tamanhos, fontes, espaçamentos e posicionamento
+                        dos elementos.
+                    </p>
+                </div>
+            `;
+        }
+
+        if (tipo === "javascript") {
+            info.innerHTML = `
+                <div class="tech-box">
+                    <h3>JavaScript</h3>
+                    <p>
+                        JavaScript é uma linguagem utilizada para adicionar
+                        interatividade às páginas, permitindo criar
+                        funcionalidades e comportamentos dinâmicos.
+                    </p>
+                </div>
+            `;
+        }
+
+        if (tipo === "php") {
+            info.innerHTML = `
+                <div class="tech-box">
+                    <h3>PHP</h3>
+                    <p>
+                        PHP é uma linguagem de programação utilizada
+                        principalmente no desenvolvimento do lado do
+                        servidor, permitindo criar sistemas e páginas
+                        dinâmicas.
+                    </p>
+                </div>
+            `;
+        }
+
+        info.dataset.aberto = tipo;
+    });
+
+});
